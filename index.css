@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 1.5rem;
+  letter-spacing: 0.3rem;
+  font-size: 3rem;
+}
+
+.main-img-div {
+  display: flex;
+  justify-content: center;
+}
+
+.div-img {
+  display: flex;
+}
+
+span {
+  font-size: 1.6rem;
+  padding-left: 0.1rem;
+}
+
+/* start of form input styling */
+.form-container {
+  border: 1px solid #bbb;
+  background-color: #fff;
+  width: 75%;
+  margin-top: 20px;
+  padding: 2rem;
+}
+
+h3 {
+  letter-spacing: 0.1rem;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+a {
+  color: rgb(24, 74, 240);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.div-input {
+  padding-top: 25px;
+}
+
+label {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.input {
+  display: inline-block;
+  height: 3.5rem;
+  width: 100%;
+}
+
+.input:active {
+  border: 1px solid rgb(24, 74, 240);
+}
+
+#button {
+  padding: 0.9rem;
+  margin: 15px 0;
+  width: 100%;
+  text-transform: capitalize;
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(24, 74, 240);
+  border: 2px solid rgb(24, 74, 240);
+  border-radius: 3px;
+  font-size: 1.5rem;
+}
+
+.terms{
+  font-size: 1.4rem;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 20px;
+}
+
+.cap-div{
+  background-color: #eee;
+  /* margin: 0 auto; */
+}
+
+.cap{
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #eee;
+  padding: 0 10px;
+}
