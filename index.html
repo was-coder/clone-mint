@@ -4,103 +4,141 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
       integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/b32460d9a8.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Mint SignUp Form</title>
   </head>
 
-  <body>
+  <body style="background-color: #ECEEF1">
+
     <header>
+      <div class="account-div">
+        <div class="account-text">
+          <p>Already have an intuit account? <br> <a href="#">I forgot my User ID or Password</a></p>
+        </div>
+
+        <div class="account-btn">
+          <a id="btn"><i class="fas fa-lock"></i> sign in</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
       <div class="container">
         <h1>intuit</h1>
 
         <div class="main-img-div">
-          <div class="div-img">
+          <div class="img-div">
             <div>
-              <img src="/image1.png" alt="mint" width="25px" height="25px" />
-            </div>
-            <div>
+              <img
+                src="/clone-mint/image1.png"
+                alt="mint"
+                width="25rem"
+                height="25rem"
+              />
               <span>mint</span>
             </div>
-          </div>
 
-          <div class="div-img">
             <div>
               <img
-                src="/image3.png"
+                src="/clone-mint/image3.png"
                 alt="quickbooks"
-                width="40px"
-                height="25px"
+                width="40rem"
+                height="25rem"
               />
-            </div>
-            <div>
               <span>quickbooks</span>
             </div>
-          </div>
 
-          <div class="div-img">
             <div>
               <img
-                src="/image2.png"
+                src="/clone-mint/image2.png"
                 alt="turbotax"
-                width="40px"
-                height="25px"
+                width="40rem"
+                height="25rem"
               />
-            </div>
-            <div>
               <span>turbotax</span>
             </div>
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
     <!--start of form input section -->
-    <section>
+    <section class="form">
       <div class="container form-container">
         <h3>Create an Intuit account</h3>
         <p class="text-center">
           One account for everything Intuit, including Mint.
           <a href="#" class="learn">Learn more</a>
         </p>
-        <p class="text-center">
+        <p class="text-center" id="account">
           Already have an account? <a href="#">Sign In</a>
         </p>
 
-        <div class="div-input">
+        <div class="input-div">
           <label for="email">Email address</label> <br />
-          <input type="email" id="email" class="input"/>
+          <input type="email" id="email" class="input" autofocus />
         </div>
 
-        <div class="div-input">
+        <div class="input-div">
           <label for="phone">Phone (recommended)</label> <br />
-          <input type="tel" id="phone" class="input"/>
+          <input type="tel" id="phone" class="input" />
         </div>
 
-        <div class="div-input">
+        <div class="input-div">
           <label for="password">Password</label> <br />
-          <input type="password" id="password" class="input"/>
+          <input type="password" id="password" class="input" />
         </div>
 
-        <button id="button">create account</button>
+        <button id="button"><i class="fas fa-lock"></i> create account</button>
 
         <p class="terms">
           By selecting Create Account, you agree to our
-          <a href="#">Terms</a> and have read and acknowledge our
-          <a href="#">Global Privacy Statement.</a>
+          <a href="#">Terms</a> and have read and acknowledge our <a href="#"> Global Privacy Statement.</a>
         </p>
+      </div>
 
-          <p class="cap">
+      <div class="container captcha">
+        <p class="cap">
           Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
           <a href="#">Terms of Use.</a>
-          </p>
+        </p>
       </div>
     </section>
     <!-- end of form input section -->
+
+    <!-- start of reserved section -->
+    <section class="reserved">
+      <div class="legal-div">
+        <p>legal</p>
+        <p>private</p>
+        <p>security</p>
+      </div>
+
+      <div class="copy-div">
+        <p>
+          &copy; 2021 Intuit, Inc. All rights reserved. Intuit QuickBooks, QB,
+          TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+          Terms and conditions, features support, pricing, and service options
+          subject to change without notice.
+        </p>
+      </div>
+    </section>
+    <!-- end of reserved section -->
+
+    <!-- start of footer -->
+    <footer>
+      <div>privacy settings</div>
+    </footer>
+    <!-- end of footer -->
   </body>
 </html>
