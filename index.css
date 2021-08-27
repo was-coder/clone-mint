@@ -1,16 +1,26 @@
-* {
+/* start of standard styling */
+:root {
+  --primary: #eceef1;
+  --secondary: rgb(71, 105, 218);
+  --alternative: #fff;
+}
+
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* end of standard styling */
 
-body {
-  background-color: #eee;
+.account-div {
+  display: none;
 }
 
 h1 {
   text-align: center;
-  padding-top: 1.5rem;
+  padding-top: 1.2rem;
   letter-spacing: 0.3rem;
   font-size: 3rem;
 }
@@ -20,7 +30,7 @@ h1 {
   justify-content: center;
 }
 
-.div-img {
+.img-div {
   display: flex;
 }
 
@@ -31,8 +41,9 @@ span {
 
 /* start of form input styling */
 .form-container {
-  border: 1px solid #bbb;
-  background-color: #fff;
+  border: 1px solid rgb(121, 120, 120);
+  border-bottom: 1px solid var(--primary);
+  background-color: var(--alternative);
   width: 75%;
   margin-top: 20px;
   padding: 2rem;
@@ -45,7 +56,7 @@ h3 {
 }
 
 a {
-  color: rgb(24, 74, 240);
+  color: var(--secondary);
   text-decoration: none;
   font-weight: bold;
 }
@@ -54,7 +65,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.div-input {
+.input-div {
   padding-top: 25px;
 }
 
@@ -64,13 +75,21 @@ label {
 }
 
 .input {
-  display: inline-block;
+  display: block;
   height: 3.5rem;
   width: 100%;
+  transition: 0.5s;
+  outline: none;
+  padding-left: 5px;
 }
 
-.input:active {
-  border: 1px solid rgb(24, 74, 240);
+.input:focus {
+  border: 2px solid var(--secondary);
+}
+
+i {
+  font-size: larger;
+  padding-right: 5px;
 }
 
 #button {
@@ -80,27 +99,145 @@ label {
   text-transform: capitalize;
   display: inline-block;
   color: #fff;
-  background-color: rgb(24, 74, 240);
-  border: 2px solid rgb(24, 74, 240);
+  background-color: var(--secondary);
+  border: 2px solid var(--secondary);
   border-radius: 3px;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
-.terms{
-  font-size: 1.4rem;
-  text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  margin-bottom: 20px;
-}
-
-.cap-div{
-  background-color: #eee;
-  /* margin: 0 auto; */
-}
-
-.cap{
+.terms {
   font-size: 1.2rem;
   text-align: center;
-  background-color: #eee;
-  padding: 0 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 20px;
+  font-style: italic;
 }
+
+.captcha {
+  border: 1px solid rgb(121, 120, 120);
+  padding: 15px;
+  width: 75%;
+  border-top: 1px solid var(--primary);
+}
+
+.cap {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.reserved {
+  margin: 30px 0;
+}
+
+.legal-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 30%;
+}
+
+.legal-div p {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.copy-div {
+	margin: 0 auto;
+	text-align: center;
+	width: 80%;
+}
+
+.copy-div p {
+  font-size: 1.2rem;
+}
+
+footer {
+  background-color: var(--alternative);
+  padding: 15px;
+  text-transform: capitalize;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+/* start of tablet styling */
+@media only screen and (min-width: 780px) {
+  .account-div {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+  }
+
+  .account-text p {
+    font-size: 1.2rem;
+  }
+  .account-text a {
+    font-size: 1.1rem;
+  }
+
+  .account-btn {
+    padding: 5px 15px;
+  }
+
+  #btn {
+    background-color: var(--secondary);
+    color: #fff;
+    padding: 10px 15px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    border: 1px solid #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /* start of form styling */
+  .form-container #account {
+    display: none;
+  }
+
+  .form-container {
+    max-width: 45%;
+  }
+
+  .captcha {
+    max-width: 45%;
+  }
+  /* end of form styling */
+
+  /* start of reserved styling */
+  .legal-div {
+    max-width: 20%;
+  }
+
+  .copy-div {
+    max-width: 75%;
+  }
+  /* end of reserved styling */
+}
+
+/* end of tablet styling */
+
+/* start of larger screen styling */
+@media only screen and (min-width: 1200px) {
+  /* start of form styling */
+  .form-container {
+    max-width: 27%;
+  }
+
+  .captcha {
+    max-width: 27%;
+  }
+  /* end of form styling */
+
+  /* start of reserved styling */
+  .legal-div {
+    max-width: 12%;
+  }
+
+  .copy-div {
+    max-width: 60%;
+  }
+  /* end of reserved styling */
+}
+
+/* end of larger screen styling */
