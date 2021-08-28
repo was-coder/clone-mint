@@ -18,119 +18,114 @@
     <title>Mint SignUp Form</title>
   </head>
 
-  <body style="background-color: #ECEEF1">
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="account-div">
+          <div class="account-text">
+            <p>
+              Already have an intuit account? <br />
+              <a href="#">I forgot my User ID or Password</a>
+            </p>
+          </div>
 
-    <header>
-      <div class="account-div">
-        <div class="account-text">
-          <p>Already have an intuit account? <br> <a href="#">I forgot my User ID or Password</a></p>
+          <div class="account-btn">
+            <a id="btn"><i class="fas fa-lock"></i> sign in</a>
+          </div>
         </div>
+      </header>
 
-        <div class="account-btn">
-          <a id="btn"><i class="fas fa-lock"></i> sign in</a>
-        </div>
-      </div>
-    </header>
+      <section>
+        <div class="container">
+          <h1>intuit</h1>
 
-    <section>
-      <div class="container">
-        <h1>intuit</h1>
+          <div class="main-img-div">
+            <div class="img-div">
+              <div>
+                <img src="./images/image1.png" alt="mint" class="img" />
+                <span class="img-text">mint</span>
+              </div>
 
-        <div class="main-img-div">
-          <div class="img-div">
-            <div>
-                <img
-                src="./images/image1.png"
-                alt="mint"
-                class="img"
-              />
-              <span class="img-text">mint</span>
-            </div>
+              <div>
+                <img src="./images/image3.png" alt="quickbooks" class="img" />
+                <span class="img-text">quickboxs</span>
+              </div>
 
-            <div>
-                <img
-                src="./images/image3.png"
-                alt="quickbooks"
-                class="img"
-              />
-              <span class="img-text">quickboxs</span>
-            </div>
-
-            <div>
-                <img
-                src="./images/image2.jpg"
-                alt="turbotax"
-                class="img"
-              />
-              <span class="img-text">turbotax</span>
+              <div>
+                <img src="./images/image2.jpg" alt="turbotax" class="img" />
+                <span class="img-text">turbotax</span>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--start of form input section -->
-    <section class="form">
-      <div class="container form-container">
-        <h3>Create an Intuit account</h3>
-        <p class="text-center">
-          One account for everything Intuit, including Mint.
-          <a href="#" class="learn">Learn more</a>
-        </p>
-        <p class="text-center" id="account">
-          Already have an account? <a href="#">Sign In</a>
-        </p>
+      <!--start of form input section -->
+      <section class="form">
+        <div class="container form-container">
+          <h3>Create an Intuit account</h3>
+          <p class="text-center">
+            One account for everything Intuit, including Mint.
+            <a href="#" class="learn">Learn more</a>
+          </p>
+          <p class="text-center" id="account">
+            Already have an account? <a href="#">Sign In</a>
+          </p>
 
-        <div class="input-div">
-          <label for="email">Email address</label> <br />
-          <input type="email" id="email" class="input" autofocus />
+          <div class="input-div">
+            <label for="email">Email address</label> <br />
+            <input type="email" id="email" class="input" autofocus />
+          </div>
+
+          <div class="input-div">
+            <label for="phone">Phone (recommended)</label> <br />
+            <input type="tel" id="phone" class="input" />
+          </div>
+
+          <div class="input-div">
+            <label for="password">Password</label> <br />
+            <input type="password" id="password" class="input" />
+          </div>
+
+          <button id="button">
+            <i class="fas fa-lock"></i> create account
+          </button>
+
+          <p class="terms">
+            By selecting Create Account, you agree to our
+            <a href="#">Terms</a> and have read and acknowledge our
+            <a href="#"> Global Privacy Statement.</a>
+          </p>
         </div>
 
-        <div class="input-div">
-          <label for="phone">Phone (recommended)</label> <br />
-          <input type="tel" id="phone" class="input" />
+        <div class="container captcha">
+          <p class="cap">
+            Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
+            <a href="#">Terms of Use.</a>
+          </p>
+        </div>
+      </section>
+      <!-- end of form input section -->
+
+      <!-- start of reserved section -->
+      <section class="reserved">
+        <div class="legal-div">
+          <p>legal</p>
+          <p>private</p>
+          <p>security</p>
         </div>
 
-        <div class="input-div">
-          <label for="password">Password</label> <br />
-          <input type="password" id="password" class="input" />
+        <div class="copy-div">
+          <p>
+            &copy; 2021 Intuit, Inc. All rights reserved. Intuit QuickBooks, QB,
+            TurboTax, ProConnect and Mint are registered trademarks of Intuit
+            Inc. Terms and conditions, features support, pricing, and service
+            options subject to change without notice.
+          </p>
         </div>
-
-        <button id="button"><i class="fas fa-lock"></i> create account</button>
-
-        <p class="terms">
-          By selecting Create Account, you agree to our
-          <a href="#">Terms</a> and have read and acknowledge our <a href="#"> Global Privacy Statement.</a>
-        </p>
-      </div>
-
-      <div class="container captcha">
-        <p class="cap">
-          Invisible reCAPTCHA by Google <a href="#">Privacy Policy</a> and
-          <a href="#">Terms of Use.</a>
-        </p>
-      </div>
-    </section>
-    <!-- end of form input section -->
-
-    <!-- start of reserved section -->
-    <section class="reserved">
-      <div class="legal-div">
-        <p>legal</p>
-        <p>private</p>
-        <p>security</p>
-      </div>
-
-      <div class="copy-div">
-        <p>
-          &copy; 2021 Intuit, Inc. All rights reserved. Intuit QuickBooks, QB,
-          TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
-          Terms and conditions, features support, pricing, and service options
-          subject to change without notice.
-        </p>
-      </div>
-    </section>
-    <!-- end of reserved section -->
+      </section>
+      <!-- end of reserved section -->
+    </div>
 
     <!-- start of footer -->
     <footer>
