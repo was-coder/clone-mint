@@ -14,16 +14,17 @@
 }
 /* end of standard styling */
 
-.wrapper{
+.wrapper {
+  padding: 10px 0;
   background-color: #eceef1;
-  height: 160vh;
+  min-height: 100vh;
 }
 
 .account-div {
   display: none;
 }
 
-body{
+body {
   min-height: 100vh;
 }
 
@@ -53,7 +54,7 @@ h1 {
   border-radius: 50%;
 }
 
-.img-text{
+.img-text {
   font-size: large;
 }
 
@@ -162,9 +163,9 @@ i {
 }
 
 .copy-div {
-	margin: 0 auto;
-	text-align: center;
-	width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
 }
 
 .copy-div p {
