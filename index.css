@@ -17,7 +17,7 @@
 .wrapper {
   padding: 10px 0;
   background-color: #eceef1;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .account-div {
@@ -173,6 +173,7 @@ i {
 }
 
 footer {
+  max-height: 20vh;
   background-color: var(--alternative);
   padding: 15px;
   text-transform: capitalize;
