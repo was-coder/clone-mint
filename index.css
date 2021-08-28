@@ -36,12 +36,10 @@ h1 {
 
 .img-div {
   display: flex;
-  transition: 0.5s;
 }
 
 .img-div div {
   padding-right: 15px;
-  transition-timing-function: ease-in;
 }
 
 .img {
