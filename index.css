@@ -14,12 +14,12 @@
 }
 /* end of standard styling */
 
-body{
-  min-height: 100vh;
-}
-
 .account-div {
   display: none;
+}
+
+body{
+  height: 100vh;
 }
 
 h1 {
