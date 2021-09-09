@@ -4,8 +4,7 @@
 
 # Screenshots
 
-![screenshots] (./images/mint.PNG)
-![screenshots] (./images/mint1.PNG)
+![screenshots](./images/screenshot.PNG)
 
 ## Built With
 
@@ -27,7 +26,7 @@
 
 - Github: [@was-coder](https://github.com/was-coder)
 - Twitter: [@DevWaslead](https://twitter.com/DevWaslead)
-- Linkedin: [@Adelaun-Wasiu](https://www.linkedin.com/in/adelakun-wasiu-1a2a5b1a6/)
+- Linkedin: [@Adelakun-Wasiu](https://www.linkedin.com/in/adelakun-wasiu-1a2a5b1a6/)
 
 ## Show your support
 
