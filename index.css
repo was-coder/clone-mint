@@ -45,17 +45,17 @@ h1 {
 }
 
 .img-div div {
-  padding-right: 15px;
-}
-
-.img {
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
+  padding-right: 10px;
 }
 
 .img-text {
-  font-size: large;
+  font-size: 1.6rem;
+}
+
+.img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
 }
 
 /* start of form input styling */
@@ -64,7 +64,7 @@ h1 {
   border: 1px solid rgb(121, 120, 120);
   border-bottom: 1px solid var(--primary);
   background-color: var(--alternative);
-  width: 75%;
+  width: 85%;
   margin-top: 20px;
   padding: 2rem;
 }
@@ -136,7 +136,7 @@ i {
 .captcha {
   border: 1px solid rgb(121, 120, 120);
   padding: 15px;
-  width: 75%;
+  width: 85%;
   border-top: 1px solid var(--primary);
 }
 
@@ -242,11 +242,15 @@ footer {
 @media only screen and (min-width: 1200px) {
   /* start of form styling */
   .form-container {
-    max-width: 27%;
+    max-width: 35%;
   }
 
+  .img-text {
+  font-size: large;
+}
+
   .captcha {
-    max-width: 27%;
+    max-width: 35%;
   }
   /* end of form styling */
 
